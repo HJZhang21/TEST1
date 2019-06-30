@@ -24,7 +24,6 @@ public class LogAspect {
         for (Object arg : joinPoint.getArgs()) {
             sb.append("arg:" + arg.toString() + "|");
         }
-        System.out.println("test");
         logger.info("before method: " + sb.toString());
     }
 
