@@ -25,7 +25,6 @@ public class LogAspect {
             sb.append("arg:" + arg.toString() + "|");
         }
         logger.info("before method: " + sb.toString());
-        System.out.println("ttest");
     }
 
     @After("execution(* com.nowcoder.controller.IndexController.*(..))")
